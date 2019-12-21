@@ -1,0 +1,44 @@
+name: newsallglobal
+description: A new Flutter project.
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  http: ^0.12.0+2
+  webfeed: ^0.4.2
+  flutter_launcher_icons: ^0.7.4
+  flutter_star_rating: ^0.0.2
+  webview_flutter: ^0.3.18+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - iconos/icons.png
+    - iconos/rt.png
+    - iconos/cnn.png
+    - iconos/telesur.png
+    - iconos/cibercuba.png
+    - iconos/rtve.jpg
+    - iconos/granma.jpg
+    - iconos/elpais.png
+    - iconos/elmundo.png
+    - iconos/hoy.jpg
+    - iconos/cubadebate.png
+    - iconos/wallpaper.jpg
+
+ 
