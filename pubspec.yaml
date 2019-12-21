@@ -16,6 +16,7 @@ dependencies:
   flutter_launcher_icons: ^0.7.4
   flutter_star_rating: ^0.0.2
   webview_flutter: ^0.3.18+1
+  cloud_firestore: ^0.13.0+1
 
 dev_dependencies:
   flutter_test:

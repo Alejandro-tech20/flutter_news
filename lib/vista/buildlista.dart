@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsallglobal/negocio/noticias.dart';
-import 'package:webfeed/domain/rss_content.dart';
-import 'package:webfeed/util/helpers.dart';
 import 'package:webfeed/webfeed.dart';
-import 'package:xml/xml.dart' as xml;
-
-
 import 'Detalles.dart';
 
 class Conexionn extends StatefulWidget {
@@ -101,7 +96,7 @@ class _ConexionWidgetState extends State<Conexionn> {
                           image: DecorationImage(
                             image: NetworkImage(
                               item.enclosure?.type == "image/jpeg"
-                                  ? item.enclosure.url: item.content?.url != null ? item.content.url : ''
+                                  ? item.enclosure.url: item.content?.url != null ? item.content.url :''
                             ),
                             fit: BoxFit.cover,
                           ),
