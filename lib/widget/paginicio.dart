@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_star_rating/flutter_star_rating.dart';
-import 'home.dart';
+import 'package:newsallglobal/vista/home.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class BodyAll extends StatefulWidget {
@@ -13,46 +13,7 @@ class _BodyAll extends State<BodyAll> {
   void initState() {
     super.initState();
   }
-
-  final int ctn = 2;
-  static List<Map<String, String>> prensa = [
-    {
-      "nombre": "RT Noticias",
-      "url": "https://actualidad.rt.com/feeds/all.rss",
-      "img": "iconos/rt.png",
-    },
-    {
-      "nombre": "CNN Noticias",
-      "url": "http://rss.cnn.com/rss/edition_world.rss",
-      "img": "iconos/cnn.png",
-    },
-    {
-      "nombre": "TeleSur Noticias",
-      "url": "https://www.telesurtv.net/rss/RssPortada.html",
-      "img": "iconos/telesur.png",
-    },
-    {
-      "nombre": "El Mundo Noticias",
-      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
-      "img": "iconos/elmundo.png",
-    },
-    {
-      "nombre": "RTVE Noticias",
-      "url": "http://api2.rtve.es/rss/temas_noticias.xml",
-      "img": "iconos/rtve.jpg",
-    },
-    {
-      "nombre": "Extremadura Noticias",
-      "url": "https://www.hoy.es/rss/2.0/portada",
-      "img": "iconos/hoy.jpg",
-    },
-    {
-      "nombre": "CubaDebate",
-      "url": "http://www.cubadebate.cu/feed/",
-      "img": "iconos/cubadebate.png",
-    },
-  ];
-
+  
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(

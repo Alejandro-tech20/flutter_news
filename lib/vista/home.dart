@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import '../main.dart';
+import 'package:newsallglobal/constants/theme.dart';
+import 'package:provider/provider.dart';
 import 'buildlista.dart';
 
 
@@ -21,7 +22,8 @@ class MyHomePage extends StatelessWidget {
             /***************** */
             //Tema configurado anteriormente
             //**************** */
-            style: thema().textTheme.title,            
+            style: Provider.of<Thema>(context).thema().textTheme.title, 
+            // thema().textTheme.title,            
           ),
           actions: <Widget>[
             Padding(

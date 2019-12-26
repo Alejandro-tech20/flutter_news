@@ -96,7 +96,12 @@ class _ConexionWidgetState extends State<Conexionn> {
                           image: DecorationImage(
                             image: NetworkImage(
                               item.enclosure?.type == "image/jpeg"
-                                  ? item.enclosure.url: item.content?.url != null ? item.content.url :''
+                                  ? item.enclosure.url
+                                  : item.content?.url != null
+                                      ? item.content.url
+                                      : item.descriptio?.images != null
+                                          ? item.descriptio.images.first
+                                          : '',
                             ),
                             fit: BoxFit.cover,
                           ),
@@ -129,13 +134,15 @@ class _ConexionWidgetState extends State<Conexionn> {
                   InkWell(
                     onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Detalles(
-                                    title: 'Noticias',
-                                    url: item.link,
-                                    key: null,
-                                  )));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Detalles(
+                            title: 'Noticias',
+                            url: item.link,
+                            key: null,
+                          ),
+                        ),
+                      );
                     },
                     child: Text(
                       item.title,
@@ -158,7 +165,9 @@ class _ConexionWidgetState extends State<Conexionn> {
                 borderRadius: BorderRadius.circular(32),
               ),
               child: Image.network(
-                item.enclosure?.type == "image/jpeg" ? item.enclosure.url : item.content?.url != null ? item.content.url : '',
+                item.enclosure?.type == "image/jpeg"
+                    ? item.enclosure.url
+                    : item.content?.url != null ? item.content.url : '',
                 fit: BoxFit.cover,
               ),
             ),
@@ -167,5 +176,4 @@ class _ConexionWidgetState extends State<Conexionn> {
       ),
     );
   }
- 
 }

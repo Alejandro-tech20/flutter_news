@@ -17,6 +17,7 @@ dependencies:
   flutter_star_rating: ^0.0.2
   webview_flutter: ^0.3.18+1
   cloud_firestore: ^0.13.0+1
+  provider: ^4.0.0
 
 dev_dependencies:
   flutter_test:
@@ -41,5 +42,3 @@ flutter:
     - iconos/hoy.jpg
     - iconos/cubadebate.png
     - iconos/wallpaper.jpg
-
- 
